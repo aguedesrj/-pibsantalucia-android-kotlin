@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutCongregadoMom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextCongregadoMom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_hint_mom_congregado"
+                android:inputType="textNoSuggestions"
+                android:lines="1"
+                android:maxLength="80"
+                android:textColor="@color/colorTextInputEditText"
+                android:textSize="@dimen/size_text_input_edit_text"
+                android:fontFamily="@font/nunito_regular"
+                android:nextFocusDown="@+id/textInputEditTextCongregadoFather"
+                android:importantForAutofill="noExcludeDescendants"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutCongregadoFather"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayoutCongregadoMom"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutCongregadoMom"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayoutCongregadoMom">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextCongregadoFather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_hint_father_congregado"
+                android:inputType="textNoSuggestions"
+                android:lines="1"
+                android:maxLength="45"
+                android:textColor="@color/colorTextInputEditText"
+                android:textSize="@dimen/size_text_input_edit_text"
+                android:fontFamily="@font/nunito_regular"
+                android:nextFocusDown="@+id/textInputLayoutCongregadoDateMarriage"
+                android:importantForAutofill="noExcludeDescendants"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutReference4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayoutCongregadoFather"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutCongregadoFather"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayoutCongregadoFather">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutCongregadoDateMarriage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent=".48">
+
+                <mk.webfactory.dz.maskededittext.MaskedEditText
+                    android:id="@+id/textInputEditTextCongregadoDateMarriage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/string_hint_date_marriage_congregado"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:textColor="@color/colorTextInputEditText"
+                    android:textSize="@dimen/size_text_input_edit_text"
+                    android:fontFamily="@font/nunito_regular"
+                    app:maskededittext_enforceMaskLength="false"
+                    app:maskededittext_mask="##/##/####"
+                    app:maskededittext_maskCharacter="#"
+                    android:nextFocusDown="@+id/textInputEditTextCongregadoDateBaptism"
+                    android:importantForAutofill="noExcludeDescendants"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutCongregadoDateBaptism"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textInputLayoutCongregadoDateMarriage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textInputLayoutCongregadoDateMarriage"
+                app:layout_constraintTop_toTopOf="@+id/textInputLayoutCongregadoDateMarriage">
+
+                <mk.webfactory.dz.maskededittext.MaskedEditText
+                    android:id="@+id/textInputEditTextCongregadoDateBaptism"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/string_hint_date_baptism_congregado"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:nextFocusDown="@+id/textInputLayoutCongregadoNaturalness"
+                    android:textColor="@color/colorTextInputEditText"
+                    android:textSize="@dimen/size_text_input_edit_text"
+                    android:fontFamily="@font/nunito_regular"
+                    app:maskededittext_enforceMaskLength="false"
+                    app:maskededittext_mask="##/##/####"
+                    app:maskededittext_maskCharacter="#"
+                    android:importantForAutofill="noExcludeDescendants"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radioGroupCongregadoMembro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayoutReference4"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayoutReference4"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutReference4">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Membro da Igreja?" />
+
+            <RadioButton
+                android:id="@+id/radioButtonCongregadoMembroSim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sim"
+                android:textColor="@color/colorTextInputEditText"
+                android:textSize="@dimen/size_text_input_edit_text"
+                android:fontFamily="@font/nunito_regular"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonCongregadoMembroNao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Não"
+                android:textColor="@color/colorTextInputEditText"
+                android:textSize="@dimen/size_text_input_edit_text"
+                android:fontFamily="@font/nunito_regular"/>
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutCongregadoObs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayoutReference4"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayoutReference4"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupCongregadoMembro">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextCongregadoObs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_hint_obs_congregado"
+                android:inputType="textNoSuggestions"
+                android:maxLength="255"
+                android:textColor="@color/colorTextInputEditText"
+                android:textSize="@dimen/size_text_input_edit_text"
+                android:fontFamily="@font/nunito_regular" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

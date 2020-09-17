@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "850057157287",
+    "firebase_url": "https://pibsanta-lucia.firebaseio.com",
+    "project_id": "pibsanta-lucia",
+    "storage_bucket": "pibsanta-lucia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850057157287:android:6e71e99c8c949c92df5982",
+        "android_client_info": {
+          "package_name": "br.com.pibsantalucia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "850057157287-rcl80f67jonso1kdokj3rrjsrnivatqo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGOW5TrPki3jEoM80VjxrfucPvmA0mQTM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "850057157287-rcl80f67jonso1kdokj3rrjsrnivatqo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

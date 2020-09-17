@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detalhefullmembro.DetalheFullMembroActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewDetalheMembroBg"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/ic_placeholder_user" />
+
+        <View
+            android:id="@+id/viewDetalheMembroBg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/background_dark"
+            android:alpha="0.7"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewDetalheMembroBg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageViewDetalheMembroBg" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circularImageViewDetalheMembro"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_placeholder_user"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewDetalheMembroBg"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewDetalheMembroBg"
+            app:layout_constraintStart_toStartOf="@+id/imageViewDetalheMembroBg"
+            app:layout_constraintTop_toTopOf="@+id/imageViewDetalheMembroBg"/>
+
+        <TextView
+            android:id="@+id/textViewDetalheMembroNome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="@dimen/size_text_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewDetalheMembroBg" />
+
+        <TextView
+            android:id="@+id/textViewDetalheMembroSexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/nunito_regularitalic"
+            android:text="TextView"
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/size_text_14"
+            app:layout_constraintEnd_toEndOf="@+id/textViewDetalheMembroNome"
+            app:layout_constraintStart_toStartOf="@+id/textViewDetalheMembroNome"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDetalheMembroNome" />
+
+        <TextView
+            android:id="@+id/textViewDetalheMembroInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunito_regularitalic"
+            android:text="Caso alguma informação estiver errada, por favor entrar com contato com uma das secretárias da Igreja."
+            android:textAlignment="gravity"
+            android:textSize="@dimen/size_text_14"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/textViewDetalheMembroNome"
+            app:layout_constraintStart_toStartOf="@+id/textViewDetalheMembroNome"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDetalheMembroSexo" />
+
+        <TextView
+            android:id="@+id/textViewDadosPessoais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Dados Pessoais"
+            android:textSize="@dimen/size_text_18"
+            app:layout_constraintStart_toStartOf="@+id/textViewDetalheMembroNome"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDetalheMembroInfo" />
+
+        <View
+            android:id="@+id/viewLineDadosPessoais"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/textViewDetalheMembroNome"
+            app:layout_constraintStart_toStartOf="@+id/textViewDadosPessoais"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDadosPessoais" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutFull1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/viewLineDadosPessoais"
+            app:layout_constraintStart_toStartOf="@+id/viewLineDadosPessoais"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDadosPessoais">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutDataNascimento"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".50">
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullDataNascimento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Data Nascimento"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullDataNascimentoValor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="TextView"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textViewDetalheFullDataNascimento"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDetalheFullDataNascimento" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutCpf"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".50">
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullCpf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="CPF"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullCpfValor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="TextView"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDetalheFullCpf" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutFull2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayoutFull1"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayoutFull1"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutFull1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutTipoSanguineo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".50">
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullTipoSanguineo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Tipo Sanguíneo"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullTipoSanguineoValor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="TextView"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textViewDetalheFullTipoSanguineo"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDetalheFullTipoSanguineo" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutProfissao"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".50">
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullProfissao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Profissão"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullProfissaoValor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="TextView"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDetalheFullProfissao" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutFull3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayoutFull2"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayoutFull2"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutFull2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutNaturalidade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".50">
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullNaturalidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Naturalidade"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullNaturalidadeValor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="TextView"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textViewDetalheFullNaturalidade"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDetalheFullNaturalidade" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutNacionalidade"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".50">
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullNacionalidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Nacionalidade"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullNacionalidadeValor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="TextView"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDetalheFullNacionalidade" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutFull4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayoutFull3"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayoutFull3"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutFull3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutMae"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".50">
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullMae"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Nome da Mãe"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullMaeValor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="TextView"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textViewDetalheFullMae"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDetalheFullMae" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutPai"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".50">
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullPai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Nome do Pai"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullPaiValor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="TextView"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDetalheFullPai" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutFull5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayoutFull4"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayoutFull4"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutFull4">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutDataCasamento"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".50">
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullDataCasamento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Data Casamento"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullDataCasamentoValor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="TextView"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textViewDetalheFullDataCasamento"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDetalheFullDataCasamento" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutDataBatismo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".50">
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullDataBatismo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Data Batismo"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullDataBatismoValor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="TextView"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDetalheFullDataBatismo" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textViewEndereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Endereço"
+            android:textSize="@dimen/size_text_18"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayoutFull5"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutFull5" />
+
+        <View
+            android:id="@+id/viewLineEndereco"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayoutFull5"
+            app:layout_constraintStart_toStartOf="@+id/textViewEndereco"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEndereco" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutFull6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/viewLineEndereco"
+            app:layout_constraintStart_toStartOf="@+id/viewLineEndereco"
+            app:layout_constraintTop_toBottomOf="@+id/viewLineEndereco">
+
+            <TextView
+                android:id="@+id/textViewDetalheFullLogradouro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Logradouro"
+                android:textSize="@dimen/size_text_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewDetalheFullLogradouroValor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/nunito_regular"
+                android:text="TextView"
+                android:textSize="@dimen/size_text_16"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textViewDetalheFullLogradouro"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDetalheFullLogradouro" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutFull7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayoutFull6"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayoutFull6"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutFull6">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutComplemento"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".50">
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullComplemento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Complemento"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullComplementoValor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="TextView"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textViewDetalheFullComplemento"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDetalheFullComplemento" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutNumero"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".50">
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullNumero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Número"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullNumeroValor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="TextView"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDetalheFullNumero" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutFull8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayoutFull7"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayoutFull7"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutFull7">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutBairro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".50">
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullBairro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Bairro"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullBairroValor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="TextView"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textViewDetalheFullBairro"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDetalheFullBairro" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutCidade"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".50">
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullCidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Cidade"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullCidadeValor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="TextView"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDetalheFullCidade" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutFull9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayoutFull8"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayoutFull8"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutFull8">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutEstado"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".50">
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullEstado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Estado"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullEstadoValor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="TextView"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textViewDetalheFullEstado"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDetalheFullEstado" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayoutCep"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent=".50">
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullCep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="CEP"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewDetalheFullCepValor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="TextView"
+                    android:textSize="@dimen/size_text_16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewDetalheFullCep" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textViewContato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Contatos"
+            android:textSize="@dimen/size_text_18"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayoutFull9"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutFull9" />
+
+        <View
+            android:id="@+id/viewLineContato"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayoutFull9"
+            app:layout_constraintStart_toStartOf="@+id/textViewContato"
+            app:layout_constraintTop_toBottomOf="@+id/textViewContato" />
+
+        <TextView
+            android:id="@+id/textViewDetalheFullContatosValor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/nunito_regular"
+            android:text="TextView"
+            android:textSize="@dimen/size_text_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/viewLineContato"
+            app:layout_constraintStart_toStartOf="@+id/viewLineContato"
+            app:layout_constraintTop_toBottomOf="@+id/viewLineContato" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

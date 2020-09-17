@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#424688</color>
+    <color name="colorPrimaryDark">@color/colorPrimary</color>
+    <color name="colorAccent">@color/colorPrimary</color>
+
+    <color name="colorDefault">@color/colorPrimary</color>
+
+    <color name="colorTextButton">@color/colorPrimary</color>
+    <color name="colorTextInputEditText">@color/colorPrimary</color>
+
+    <!-- Cores do App -->
+    <color name="color_blue">@color/colorPrimary</color>
+    <color name="color_botton_text_color">@android:color/white</color>
+    <color name="color_text_color_info">#a4a4a4</color>
+
+</resources>

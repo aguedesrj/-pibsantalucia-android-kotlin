@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutLoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextLoginCpfEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_regular"
+                android:hint="@string/screen_login_hint_cpf_email"
+                android:inputType="textNoSuggestions"
+                android:lines="1"
+                android:textColor="@color/colorTextInputEditText"
+                android:textSize="@dimen/size_text_input_edit_text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutLoginPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayoutLoginEmail"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayoutLoginEmail"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutLoginEmail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_regular"
+                android:hint="@string/screen_login_hint_password"
+                android:textColor="@color/colorTextInputEditText"
+                android:textSize="@dimen/size_text_input_edit_text"
+                android:inputType="textPassword"
+                android:lines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/rounded_botton_border"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/screen_login_hint_button_login"
+            android:textAllCaps="false"
+            android:textColor="@color/color_botton_text_color"
+            android:textSize="@dimen/size_text_button"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayoutLoginPassword"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayoutLoginPassword"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutLoginPassword" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@null"
+            android:text="@string/screen_login_hint_button_forgot_password"
+            android:textAllCaps="false"
+            android:textColor="@color/color_blue"
+            android:textSize="16sp"
+            app:fontFamily="@font/nunito_black"
+            app:layout_constraintStart_toStartOf="@+id/buttonLogin"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@null"
+            android:text="@string/screen_login_hint_button_register"
+            android:textAllCaps="false"
+            android:textColor="@color/color_blue"
+            android:textSize="16sp"
+            app:fontFamily="@font/nunito_black"
+            app:layout_constraintEnd_toEndOf="@+id/buttonLogin"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_pibsantalucia" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,188 @@
+<resources>
+    <string name="app_name">PIB Santa Lúcia</string>
+
+    <string name="text_validating">Validando...</string>
+    <string name="text_loading">Carregando...</string>
+    <string name="text_sending">Enviando...</string>
+
+    <string name="dialog_neutral_button">OK</string>
+    <string name="dialog_cancel_button">Cancelar</string>
+    <string name="dialog_join_button">Entrar</string>
+    <string name="dialog_button_yes">Sim</string>
+    <string name="dialog_button_no">Não</string>
+
+    <string name="periodo_escala_manha">Manhã</string>
+    <string name="periodo_escala_noite">Noite</string>
+    <string name="periodo_escala_ambos">Ambos</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Menu -->
+    <string name="menu_pastoral">Pastoral</string>
+    <string name="menu_register_membros">Cadastro</string>
+    <string name="menu_list_membros">Membros</string>
+    <string name="menu_list_birthdays">Aniversariantes</string>
+    <string name="menu_escala_datashow">Escala do DataShow</string>
+    <string name="menu_escala_musica">Escala da Música</string>
+    <string name="menu_escala_portaria">Escala da Portaria</string>
+    <string name="menu_escala_som">Escala do Som</string>
+    <string name="menu_escala_datashow_nome">DataShow</string>
+    <string name="menu_escala_musica_nome">Música</string>
+    <string name="menu_escala_portaria_nome">Portaria</string>
+    <string name="menu_escala_som_nome">Som</string>
+    <string name="menu_anuncio">Anúncios</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="error_message_system_not_available">Sistema indisponível no momento, tente mais tarde!</string>
+    <string name="error_message_photo">Falha ao carregar a photo do congregado.</string>
+    <string name="error_message_not_permission_photos">As permissões necessárias não foram concedidas para acessar as suas fotos.</string>
+    <string name="error_message_not_permission_camera">As permissões necessárias não foram concedidas para acessar a sua câmera.</string>
+
+    <!-- tela de login -->
+    <string name="screen_login_hint_cpf_email">CPF ou Email</string>
+    <string name="screen_login_hint_email">Email</string>
+    <string name="screen_login_hint_password">Senha</string>
+    <string name="screen_login_hint_button_login">Entrar</string>
+    <string name="screen_login_hint_button_forgot_password">Esqueci Senha</string>
+    <string name="screen_login_hint_button_register">Cadastro</string>
+    <string name="screen_login_hint_password_change_password">Trocar Senha</string>
+
+    <string name="text_new_password">Nova Senha</string>
+    <string name="text_new_password_confirm">Confirmar Nova Senha</string>
+
+    <string name="text_password">Senha</string>
+    <string name="text_password_confirm">Confirmar Senha</string>
+
+    <string name="text_confirm">Confirmar</string>
+    <string name="text_close">Fechar</string>
+
+    <string name="hint_button_send">Enviar</string>
+    <string name="hint_button_save">Salvar</string>
+    <string name="hint_button_register">Cadastrar</string>
+    <string name="hint_button_change">Alterar</string>
+    <string name="hint_button_try_again">Tentar novamente</string>
+
+    <string name="screen_forgot_password">Esqueceu a senha?</string>
+    <string name="screen_forgot_password_info">Digite seu CPF ou email de login</string>
+
+    <string name="screen_register">Cadastro</string>
+    <string name="screen_change_password">Alterar Senha</string>
+    <string name="screen_register_info">Para realizar o cadastro e ter acesso ao aplicativo, informe o CPF ou o email que você forneceu a secretária da Igreja.</string>
+    <string name="screen_password_info">A senha deve ter no mínimo 6 caracteres entre letras e números.</string>
+
+    <!-- Validações de campos -->
+    <string name="msg_error_empty">Campo obrigatório</string>
+    <string name="msg_error_invalid_mail">O email informado não é válido</string>
+    <string name="msg_error_invalid_password">A senha informada está incorreta</string>
+    <string name="msg_error_password_confirmation">A senha de confirmação está diferente da senha informada acima</string>
+    <string name="msg_error_try_again">Não foi possível carregar a lista de Membros, tente novamente</string>
+    <string name="msg_error_cep_empty">Informe o número do CEP.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="bottomNavigation_data_personal">Dados Pessoais</string>
+    <string name="bottomNavigation_more_information">Mais informações</string>
+    <string name="bottomNavigation_address">Endereço</string>
+    <string name="bottomNavigation_contacts">Contatos</string>
+
+    <!-- Tela Cadastro -->
+    <string name="string_title_congregado">Cadastro do Congregado</string>
+    <string name="string_hint_name_congregado">Nome</string>
+    <string name="string_hint_date_birth_congregado">Data Nascimento</string>
+    <string name="string_hint_cpf_congregado">CPF</string>
+    <string name="string_hint_type_blood_congregado">Tipo Sanguineo</string>
+    <string name="string_hint_naturalness_congregado">Naturalidade</string>
+    <string name="string_hint_nationality_congregado">Nacionalidade</string>
+    <string name="string_hint_profession_congregado">Profissão</string>
+    <string name="string_hint_mom_congregado">Nome da Mãe</string>
+    <string name="string_hint_father_congregado">Nome do Pai</string>
+    <string name="string_hint_date_marriage_congregado">Data Casamento</string>
+    <string name="string_hint_date_baptism_congregado">Data Batismo</string>
+    <string name="string_hint_obs_congregado">Observação</string>
+    <string name="string_hint_cep_congregado">CEP</string>
+    <string name="string_hint_public_place_congregado">Logradouro</string>
+    <string name="string_hint_complement_congregado">Complemento</string>
+    <string name="string_hint_number_congregado">Número</string>
+    <string name="string_hint_district_congregado">Bairro</string>
+    <string name="string_hint_city_congregado">Cidade</string>
+    <string name="string_hint_state_congregado">Estado</string>
+    <string name="string_hint_type_contact_congregado">Tipo de Contato</string>
+    <string name="string_hint_email_congregado">Email</string>
+    <string name="string_hint_ddd_congregado">DDD</string>
+    <string name="string_hint_phone_congregado">Telefone</string>
+    <string name="string_title_button_add_contact_congregado">Incluir Contato</string>
+
+    <!-- Tela de Transferência -->
+    <string name="string_title_transfer_congregado">Tela Transferência</string>
+    <string name="string_hint_name_transfer_congregado_transfer">Nome</string>
+    <string name="string_hint_name_transfer_status_transfer">Situação Transferência</string>
+    <string name="string_hint_date_congregado_transfer">Data transferência</string>
+    <string name="string_hint_reason_congregado_transfer">Motivo</string>
+    <string name="string_hint_church_congregado_transfer">Igreja</string>
+    <string name="string_hint_obs_congregado_transfer">Observação</string>
+
+    <!-- Tela de Óbito -->
+    <string name="string_title_obito">Tela Óbito</string>
+    <string name="string_hint_date_obito">Data do óbito</string>
+    <string name="string_hint_reason_obito">Causa</string>
+    <string name="string_hint_obs_obito">Observação</string>
+
+    <!-- Tela de Desligamento -->
+    <string name="string_title_desligamento">Tela Desligamento</string>
+    <string name="string_hint_date_desligamento">Data desligamento</string>
+    <string name="string_hint_obs_desligamento">Observação</string>
+
+    <!-- Tela de Reconciliação -->
+    <string name="string_title_reconciliacaoo">Tela Reconciliação</string>
+    <string name="string_hint_date_reconciliacaoo">Data reconciliação</string>
+    <string name="string_hint_obs_reconciliacao">Observação</string>
+
+    <!-- Tela de Anúncio -->
+    <string name="string_title_anuncio">Novo Anúncio</string>
+    <string name="string_hint_description">Anúncio</string>
+    <string name="string_hint_date_limit">Data Limite</string>
+
+    <!-- Validações -->
+    <string name="required_field">Campo obrigatório</string>
+    <string name="field_not_abbreviated">O Nome não pode ser abreviado.</string>
+    <string name="field_date_invalid">A data informada é inválida.</string>
+    <string name="field_can_not_greater_equal_to_current_date">A data informada não pode ser maior ou igual a data atual.</string>
+    <string name="field_can_not_greater_to_current_date">A data informada não pode ser menor que a data atual.</string>
+    <string name="required_type_contact">Selecione o tipo de contato.</string>
+
+    <string name="question_remove_contact">Confirma excluir o contato selecionado?</string>
+
+    <string name="choose_option_people">Selecione a seguinte opção:</string>
+
+    <string name="not_permission_call_phone">Sem permissão para realizar a ligação.</string>
+    <string name="error_call_phone">Não foi possível realizar a ligação</string>
+    <string name="error_call_whatsapp">Não foi possível abrir o Whatsapp</string>
+
+    <!-- Escala -->
+    <string name="selecione_mes_escala">Selecione o Mês da Escala</string>
+
+</resources>

@@ -1,0 +1,14 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="90"
+        android:endColor="#2a2d61"
+        android:centerColor="#3b3f77"
+        android:startColor="@color/colorPrimary"
+        android:type="linear" />
+</shape>
+
+<!--
+Site pra gerar o gradiente:
+https://mycolor.space/gradient?ori=to+right+top&hex=%231F2253&hex2=%23A8EB12&sub=1
+-->

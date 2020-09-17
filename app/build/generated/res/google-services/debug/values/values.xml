@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">850057157287-rcl80f67jonso1kdokj3rrjsrnivatqo.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://pibsanta-lucia.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">850057157287</string>
+    <string name="google_api_key" translatable="false">AIzaSyCGOW5TrPki3jEoM80VjxrfucPvmA0mQTM</string>
+    <string name="google_app_id" translatable="false">1:850057157287:android:6e71e99c8c949c92df5982</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCGOW5TrPki3jEoM80VjxrfucPvmA0mQTM</string>
+    <string name="google_storage_bucket" translatable="false">pibsanta-lucia.appspot.com</string>
+    <string name="project_id" translatable="false">pibsanta-lucia</string>
+</resources>

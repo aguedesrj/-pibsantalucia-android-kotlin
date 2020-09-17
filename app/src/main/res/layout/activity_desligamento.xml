@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.desligamento.DesligamentoActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circularImageViewPhotoDesligamento"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_placeholder_user"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewNameDesligamento"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="TextView"
+            android:textSize="@dimen/size_text_item_adapter_title"
+            app:layout_constraintBottom_toBottomOf="@+id/circularImageViewPhotoDesligamento"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/circularImageViewPhotoDesligamento"
+            app:layout_constraintTop_toTopOf="@+id/circularImageViewPhotoDesligamento" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutReference1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="@+id/textViewNameDesligamento"
+            app:layout_constraintStart_toStartOf="@+id/circularImageViewPhotoDesligamento"
+            app:layout_constraintTop_toBottomOf="@+id/circularImageViewPhotoDesligamento">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutDesligamentoDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent=".48">
+
+                <mk.webfactory.dz.maskededittext.MaskedEditText
+                    android:id="@+id/editTextDesligamentoDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_regular"
+                    android:hint="@string/string_hint_date_desligamento"
+                    android:importantForAutofill="noExcludeDescendants"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:textColor="@color/colorTextInputEditText"
+                    android:textSize="@dimen/size_text_input_edit_text"
+                    app:maskededittext_enforceMaskLength="false"
+                    app:maskededittext_mask="##/##/####"
+                    app:maskededittext_maskCharacter="#" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutDesligamentoObs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textInputLayoutDesligamentoDate"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutDesligamentoDate">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditTextDesligamentoObs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_regular"
+                    android:hint="@string/string_hint_obs_desligamento"
+                    android:importantForAutofill="noExcludeDescendants"
+                    android:inputType="textNoSuggestions"
+                    android:lines="1"
+                    android:maxLength="80"
+                    android:textColor="@color/colorTextInputEditText"
+                    android:textSize="@dimen/size_text_input_edit_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

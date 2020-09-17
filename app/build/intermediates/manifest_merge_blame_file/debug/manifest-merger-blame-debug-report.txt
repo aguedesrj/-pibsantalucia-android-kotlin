@@ -1,0 +1,399 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="br.com.pibsantalucia"
+4    android:versionCode="1"
+5    android:versionName="2.0.7" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:6:5-67
+11-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:7:5-79
+12-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:8:5-81
+13-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:8:22-78
+14    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+14-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:9:5-98
+14-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:9:22-95
+15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+15-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:10:5-81
+15-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:10:22-78
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:11:5-79
+16-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:11:22-76
+17    <uses-permission android:name="android.permission.CALL_PHONE" />
+17-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:12:5-69
+17-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:12:22-66
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:13:5-80
+18-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:13:22-77
+19    <uses-permission android:name="android.permission.CAMERA" />
+19-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:14:5-65
+19-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:14:22-62
+20    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+20-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:15:5-75
+20-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:15:22-72
+21    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+21-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/e6dfdaac58ebd4e4abce137fc86c7758/jetified-play-services-measurement-api-17.2.1/AndroidManifest.xml:24:5-68
+21-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/e6dfdaac58ebd4e4abce137fc86c7758/jetified-play-services-measurement-api-17.2.1/AndroidManifest.xml:24:22-65
+22    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+22-->[com.google.firebase:firebase-iid:20.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/bc2e0040af9d555b31c3dbb3cbdbbc5a/jetified-firebase-iid-20.0.0/AndroidManifest.xml:26:5-82
+22-->[com.google.firebase:firebase-iid:20.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/bc2e0040af9d555b31c3dbb3cbdbbc5a/jetified-firebase-iid-20.0.0/AndroidManifest.xml:26:22-79
+23    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+23-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:26:5-110
+23-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:26:22-107
+24
+25    <application
+25-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:17:5-103:19
+26        android:name="br.com.pibsantalucia.PibSantaLuciaApplication"
+26-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:18:9-49
+27        android:allowBackup="true"
+27-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:19:9-35
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.1.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/cc76f57d9b6d43ad0a1abed011a9b2b4/core-1.1.0/AndroidManifest.xml:24:18-86
+29        android:debuggable="true"
+30        android:icon="@mipmap/ic_launcher"
+30-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:20:9-43
+31        android:label="@string/app_name"
+31-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:21:9-41
+32        android:networkSecurityConfig="@xml/network_security_config"
+32-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:22:9-69
+33        android:supportsRtl="true"
+33-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:23:9-35
+34        android:testOnly="true"
+35        android:theme="@style/AppTheme" >
+35-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:24:9-40
+36        <activity
+36-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:26:9-36:20
+37            android:name="br.com.pibsantalucia.ui.splash.SplashActivity"
+37-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:27:13-53
+38            android:screenOrientation="portrait"
+38-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:28:13-49
+39            android:theme="@style/AppTheme.NoActionBar" >
+39-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:29:13-56
+40            <intent-filter>
+40-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:30:13-35:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:31:17-69
+41-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:31:25-66
+42
+43                <category android:name="android.intent.category.DEFAULT" />
+43-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:33:17-76
+43-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:33:27-73
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:34:17-77
+44-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:34:27-74
+45            </intent-filter>
+46        </activity>
+47        <activity
+47-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:37:9-40:70
+48            android:name="br.com.pibsantalucia.ui.detalhemembro.DetalheMembroActivity"
+48-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:38:13-67
+49            android:screenOrientation="portrait"
+49-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:39:13-49
+50            android:windowSoftInputMode="stateHidden|adjustResize" />
+50-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:40:13-67
+51        <activity
+51-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:41:9-44:59
+52            android:name="br.com.pibsantalucia.ui.login.LoginActivity"
+52-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:42:13-51
+53            android:screenOrientation="portrait"
+53-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:43:13-49
+54            android:theme="@style/AppTheme.NoActionBar" />
+54-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:44:13-56
+55        <activity
+55-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:45:9-48:59
+56            android:name="br.com.pibsantalucia.ui.changepassword.ChangePasswordActivity"
+56-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:46:13-69
+57            android:screenOrientation="portrait"
+57-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:47:13-49
+58            android:theme="@style/AppTheme.NoActionBar" />
+58-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:48:13-56
+59        <activity
+59-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:49:9-52:59
+60            android:name="br.com.pibsantalucia.ui.forgotpassword.ForgotPasswordActivity"
+60-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:50:13-69
+61            android:screenOrientation="portrait"
+61-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:51:13-49
+62            android:theme="@style/AppTheme.NoActionBar" />
+62-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:52:13-56
+63        <activity
+63-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:53:9-56:59
+64            android:name="br.com.pibsantalucia.ui.register.RegisterActivity"
+64-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:54:13-57
+65            android:screenOrientation="portrait"
+65-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:55:13-49
+66            android:theme="@style/AppTheme.NoActionBar" />
+66-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:56:13-56
+67        <activity
+67-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:57:9-60:59
+68            android:name="br.com.pibsantalucia.MainActivity"
+68-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:58:13-41
+69            android:screenOrientation="portrait"
+69-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:59:13-49
+70            android:theme="@style/AppTheme.NoActionBar" />
+70-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:60:13-56
+71        <activity
+71-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:61:9-64:70
+72            android:name="br.com.pibsantalucia.ui.registerpessoa.RegisterPessoaActivity"
+72-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:62:13-69
+73            android:screenOrientation="portrait"
+73-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:63:13-49
+74            android:windowSoftInputMode="stateHidden|adjustResize" />
+74-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:64:13-67
+75        <activity
+75-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:65:9-68:59
+76            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+76-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:66:13-76
+77            android:screenOrientation="portrait"
+77-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:67:13-49
+78            android:theme="@style/Base.Theme.AppCompat" />
+78-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:68:13-56
+79        <activity
+79-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:69:9-72:70
+80            android:name="br.com.pibsantalucia.ui.reconciliacao.ReconciliacaoActivity"
+80-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:70:13-67
+81            android:screenOrientation="portrait"
+81-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:71:13-49
+82            android:windowSoftInputMode="stateHidden|adjustResize" />
+82-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:72:13-67
+83        <activity
+83-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:73:9-76:70
+84            android:name="br.com.pibsantalucia.ui.desligamento.DesligamentoActivity"
+84-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:74:13-65
+85            android:screenOrientation="portrait"
+85-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:75:13-49
+86            android:windowSoftInputMode="stateHidden|adjustResize" />
+86-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:76:13-67
+87        <activity
+87-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:77:9-80:70
+88            android:name="br.com.pibsantalucia.ui.transferencia.TransferenciaActivity"
+88-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:78:13-67
+89            android:screenOrientation="portrait"
+89-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:79:13-49
+90            android:windowSoftInputMode="stateHidden|adjustResize" />
+90-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:80:13-67
+91        <activity
+91-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:81:9-84:70
+92            android:name="br.com.pibsantalucia.ui.obito.ObitoActivity"
+92-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:82:13-51
+93            android:screenOrientation="portrait"
+93-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:83:13-49
+94            android:windowSoftInputMode="stateHidden|adjustResize" />
+94-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:84:13-67
+95        <activity
+95-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:85:9-87:52
+96            android:name="br.com.pibsantalucia.ui.registerpessoa.PhotoActivity"
+96-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:86:13-60
+97            android:screenOrientation="portrait" />
+97-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:87:13-49
+98        <activity
+98-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:88:9-91:70
+99            android:name="br.com.pibsantalucia.ui.detalhefullmembro.DetalheFullMembroActivity"
+99-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:89:13-75
+100            android:screenOrientation="portrait"
+100-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:90:13-49
+101            android:windowSoftInputMode="stateHidden|adjustResize" />
+101-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:91:13-67
+102        <activity
+102-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:92:9-95:70
+103            android:name="br.com.pibsantalucia.ui.pesquisamembro.PesquisaMembroActivity"
+103-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:93:13-69
+104            android:screenOrientation="portrait"
+104-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:94:13-49
+105            android:windowSoftInputMode="stateHidden|adjustResize" />
+105-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:95:13-67
+106        <activity
+106-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:96:9-99:69
+107            android:name="br.com.pibsantalucia.ui.addanuncio.AddAnuncioActivity"
+107-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:97:13-61
+108            android:screenOrientation="portrait"
+108-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:98:13-49
+109            android:windowSoftInputMode="stateHidden|adjustResize" />
+109-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:99:13-67
+110
+111        <meta-data
+111-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:100:9-102:54
+112            android:name="com.google.firebase.messaging.default_notification_icon"
+112-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:101:13-83
+113            android:resource="@mipmap/ic_launcher" />
+113-->/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/AndroidManifest.xml:102:13-51
+114
+115        <service
+115-->[com.google.firebase:firebase-database:18.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/de0809d55662bc51227c9eb032166993/jetified-firebase-database-18.0.0/AndroidManifest.xml:29:9-33:19
+116            android:name="com.google.firebase.components.ComponentDiscoveryService"
+116-->[com.google.firebase:firebase-database:18.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/de0809d55662bc51227c9eb032166993/jetified-firebase-database-18.0.0/AndroidManifest.xml:29:18-89
+117            android:exported="false" >
+117-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/e6dfdaac58ebd4e4abce137fc86c7758/jetified-play-services-measurement-api-17.2.1/AndroidManifest.xml:29:13-37
+118            <meta-data
+118-->[com.google.firebase:firebase-database:18.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/de0809d55662bc51227c9eb032166993/jetified-firebase-database-18.0.0/AndroidManifest.xml:30:13-32:85
+119                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+119-->[com.google.firebase:firebase-database:18.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/de0809d55662bc51227c9eb032166993/jetified-firebase-database-18.0.0/AndroidManifest.xml:31:17-109
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.firebase:firebase-database:18.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/de0809d55662bc51227c9eb032166993/jetified-firebase-database-18.0.0/AndroidManifest.xml:32:17-82
+121            <meta-data
+121-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/e6dfdaac58ebd4e4abce137fc86c7758/jetified-play-services-measurement-api-17.2.1/AndroidManifest.xml:30:13-32:85
+122                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+122-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/e6dfdaac58ebd4e4abce137fc86c7758/jetified-play-services-measurement-api-17.2.1/AndroidManifest.xml:31:17-139
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/e6dfdaac58ebd4e4abce137fc86c7758/jetified-play-services-measurement-api-17.2.1/AndroidManifest.xml:32:17-82
+124            <meta-data
+124-->[com.google.firebase:firebase-iid:20.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/bc2e0040af9d555b31c3dbb3cbdbbc5a/jetified-firebase-iid-20.0.0/AndroidManifest.xml:32:13-34:85
+125                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+125-->[com.google.firebase:firebase-iid:20.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/bc2e0040af9d555b31c3dbb3cbdbbc5a/jetified-firebase-iid-20.0.0/AndroidManifest.xml:33:17-96
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.firebase:firebase-iid:20.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/bc2e0040af9d555b31c3dbb3cbdbbc5a/jetified-firebase-iid-20.0.0/AndroidManifest.xml:34:17-82
+127        </service>
+128
+129        <provider
+129-->[com.squareup.picasso:picasso:2.71828] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/d3676f0dfa28bab08e5a21376f646145/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+130            android:name="com.squareup.picasso.PicassoProvider"
+130-->[com.squareup.picasso:picasso:2.71828] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/d3676f0dfa28bab08e5a21376f646145/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+131            android:authorities="br.com.pibsantalucia.com.squareup.picasso"
+131-->[com.squareup.picasso:picasso:2.71828] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/d3676f0dfa28bab08e5a21376f646145/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+132            android:exported="false" />
+132-->[com.squareup.picasso:picasso:2.71828] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/d3676f0dfa28bab08e5a21376f646145/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+133        <!--
+134             FirebaseMessagingService performs security checks at runtime,
+135             but set to not exported to explicitly avoid allowing another app to call it.
+136        -->
+137        <service
+137-->[com.google.firebase:firebase-messaging:20.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/91129ecc3a0744d05d797aa842432f23/jetified-firebase-messaging-20.0.0/AndroidManifest.xml:28:9-34:19
+138            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+138-->[com.google.firebase:firebase-messaging:20.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/91129ecc3a0744d05d797aa842432f23/jetified-firebase-messaging-20.0.0/AndroidManifest.xml:29:13-82
+139            android:exported="false" >
+139-->[com.google.firebase:firebase-messaging:20.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/91129ecc3a0744d05d797aa842432f23/jetified-firebase-messaging-20.0.0/AndroidManifest.xml:30:13-37
+140            <intent-filter android:priority="-500" >
+140-->[com.google.firebase:firebase-messaging:20.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/91129ecc3a0744d05d797aa842432f23/jetified-firebase-messaging-20.0.0/AndroidManifest.xml:31:13-33:29
+140-->[com.google.firebase:firebase-messaging:20.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/91129ecc3a0744d05d797aa842432f23/jetified-firebase-messaging-20.0.0/AndroidManifest.xml:31:28-51
+141                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+141-->[com.google.firebase:firebase-messaging:20.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/91129ecc3a0744d05d797aa842432f23/jetified-firebase-messaging-20.0.0/AndroidManifest.xml:32:17-78
+141-->[com.google.firebase:firebase-messaging:20.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/91129ecc3a0744d05d797aa842432f23/jetified-firebase-messaging-20.0.0/AndroidManifest.xml:32:25-75
+142            </intent-filter>
+143        </service>
+144
+145        <receiver
+145-->[com.google.firebase:firebase-iid:20.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/bc2e0040af9d555b31c3dbb3cbdbbc5a/jetified-firebase-iid-20.0.0/AndroidManifest.xml:37:9-44:20
+146            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+146-->[com.google.firebase:firebase-iid:20.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/bc2e0040af9d555b31c3dbb3cbdbbc5a/jetified-firebase-iid-20.0.0/AndroidManifest.xml:38:13-78
+147            android:exported="true"
+147-->[com.google.firebase:firebase-iid:20.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/bc2e0040af9d555b31c3dbb3cbdbbc5a/jetified-firebase-iid-20.0.0/AndroidManifest.xml:39:13-36
+148            android:permission="com.google.android.c2dm.permission.SEND" >
+148-->[com.google.firebase:firebase-iid:20.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/bc2e0040af9d555b31c3dbb3cbdbbc5a/jetified-firebase-iid-20.0.0/AndroidManifest.xml:40:13-73
+149            <intent-filter>
+149-->[com.google.firebase:firebase-iid:20.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/bc2e0040af9d555b31c3dbb3cbdbbc5a/jetified-firebase-iid-20.0.0/AndroidManifest.xml:41:13-43:29
+150                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+150-->[com.google.firebase:firebase-iid:20.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/bc2e0040af9d555b31c3dbb3cbdbbc5a/jetified-firebase-iid-20.0.0/AndroidManifest.xml:42:17-81
+150-->[com.google.firebase:firebase-iid:20.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/bc2e0040af9d555b31c3dbb3cbdbbc5a/jetified-firebase-iid-20.0.0/AndroidManifest.xml:42:25-78
+151            </intent-filter>
+152        </receiver>
+153        <receiver
+153-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:29:9-33:20
+154            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+154-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:30:13-85
+155            android:enabled="true"
+155-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:31:13-35
+156            android:exported="false" >
+156-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:32:13-37
+157        </receiver>
+158        <receiver
+158-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:34:9-42:20
+159            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+159-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:35:13-100
+160            android:enabled="true"
+160-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:36:13-35
+161            android:exported="true"
+161-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:37:13-36
+162            android:permission="android.permission.INSTALL_PACKAGES" >
+162-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:38:13-69
+163            <intent-filter>
+163-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:39:13-41:29
+164                <action android:name="com.android.vending.INSTALL_REFERRER" />
+164-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:40:17-79
+164-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:40:25-76
+165            </intent-filter>
+166        </receiver>
+167
+168        <service
+168-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:44:9-47:40
+169            android:name="com.google.android.gms.measurement.AppMeasurementService"
+169-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:45:13-84
+170            android:enabled="true"
+170-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:46:13-35
+171            android:exported="false" />
+171-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:47:13-37
+172        <service
+172-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:48:9-52:72
+173            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+173-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:49:13-87
+174            android:enabled="true"
+174-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:50:13-35
+175            android:exported="false"
+175-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:51:13-37
+176            android:permission="android.permission.BIND_JOB_SERVICE" />
+176-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ab7475b23b878ab0cbe505c49fa1d930/jetified-play-services-measurement-17.2.1/AndroidManifest.xml:52:13-69
+177
+178        <provider
+178-->[com.google.firebase:firebase-common:19.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/f779ff5136e09a4f3488d43d3fe0572f/jetified-firebase-common-19.0.0/AndroidManifest.xml:12:9-16:39
+179            android:name="com.google.firebase.provider.FirebaseInitProvider"
+179-->[com.google.firebase:firebase-common:19.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/f779ff5136e09a4f3488d43d3fe0572f/jetified-firebase-common-19.0.0/AndroidManifest.xml:13:13-77
+180            android:authorities="br.com.pibsantalucia.firebaseinitprovider"
+180-->[com.google.firebase:firebase-common:19.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/f779ff5136e09a4f3488d43d3fe0572f/jetified-firebase-common-19.0.0/AndroidManifest.xml:14:13-72
+181            android:exported="false"
+181-->[com.google.firebase:firebase-common:19.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/f779ff5136e09a4f3488d43d3fe0572f/jetified-firebase-common-19.0.0/AndroidManifest.xml:15:13-37
+182            android:initOrder="100" />
+182-->[com.google.firebase:firebase-common:19.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/f779ff5136e09a4f3488d43d3fe0572f/jetified-firebase-common-19.0.0/AndroidManifest.xml:16:13-36
+183
+184        <activity
+184-->[com.google.android.gms:play-services-base:17.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/831ce8085e30a5492b64b99fe22fdf5d/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+185            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+185-->[com.google.android.gms:play-services-base:17.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/831ce8085e30a5492b64b99fe22fdf5d/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+186            android:exported="false"
+186-->[com.google.android.gms:play-services-base:17.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/831ce8085e30a5492b64b99fe22fdf5d/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+187            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+187-->[com.google.android.gms:play-services-base:17.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/831ce8085e30a5492b64b99fe22fdf5d/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+188
+189        <meta-data
+189-->[com.google.android.gms:play-services-basement:17.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ad4b9de01220bd1bf56726d5402a9b53/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+190            android:name="com.google.android.gms.version"
+190-->[com.google.android.gms:play-services-basement:17.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ad4b9de01220bd1bf56726d5402a9b53/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+191            android:value="@integer/google_play_services_version" />
+191-->[com.google.android.gms:play-services-basement:17.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/ad4b9de01220bd1bf56726d5402a9b53/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+192
+193        <service
+193-->[androidx.room:room-runtime:2.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/f09a7af753fae722087c425ae3f15636/room-runtime-2.2.1/AndroidManifest.xml:25:9-27:40
+194            android:name="androidx.room.MultiInstanceInvalidationService"
+194-->[androidx.room:room-runtime:2.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/f09a7af753fae722087c425ae3f15636/room-runtime-2.2.1/AndroidManifest.xml:26:13-74
+195            android:exported="false" />
+195-->[androidx.room:room-runtime:2.2.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/f09a7af753fae722087c425ae3f15636/room-runtime-2.2.1/AndroidManifest.xml:27:13-37
+196
+197        <provider
+197-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/3b4280e58c0092e93690a197d825f1db/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+198            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+198-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/3b4280e58c0092e93690a197d825f1db/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+199            android:authorities="br.com.pibsantalucia.lifecycle-process"
+199-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/3b4280e58c0092e93690a197d825f1db/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+200            android:exported="false"
+200-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/3b4280e58c0092e93690a197d825f1db/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+201            android:multiprocess="true" />
+201-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/3b4280e58c0092e93690a197d825f1db/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+202        <provider
+202-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/cc7f9d393d82e6b3e725cfbabc1989e1/jetified-crashlytics-2.10.1/AndroidManifest.xml:19:9-23:38
+203            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+203-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/cc7f9d393d82e6b3e725cfbabc1989e1/jetified-crashlytics-2.10.1/AndroidManifest.xml:20:13-75
+204            android:authorities="br.com.pibsantalucia.crashlyticsinitprovider"
+204-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/cc7f9d393d82e6b3e725cfbabc1989e1/jetified-crashlytics-2.10.1/AndroidManifest.xml:21:13-75
+205            android:exported="false"
+205-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/cc7f9d393d82e6b3e725cfbabc1989e1/jetified-crashlytics-2.10.1/AndroidManifest.xml:22:13-37
+206            android:initOrder="90" />
+206-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/andrelessaguedes/.gradle/caches/transforms-2/files-2.1/cc7f9d393d82e6b3e725cfbabc1989e1/jetified-crashlytics-2.10.1/AndroidManifest.xml:23:13-35
+207    </application>
+208
+209</manifest>

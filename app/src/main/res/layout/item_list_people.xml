@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circularImageViewPhotoItemListPeople"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_placeholder_user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/viewLineItemListPeople"
+        app:layout_constraintTop_toTopOf="parent"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/textViewNameItemListPeople"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="TextView"
+        android:textSize="@dimen/size_text_item_adapter_title"
+        app:layout_constraintBottom_toBottomOf="@+id/circularImageViewPhotoItemListPeople"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewItemListPeople"
+        app:layout_constraintStart_toEndOf="@+id/circularImageViewPhotoItemListPeople"
+        app:layout_constraintTop_toTopOf="@+id/circularImageViewPhotoItemListPeople" />
+
+    <View
+        android:id="@+id/viewLineItemListPeople"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_text_color_info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewItemListPeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_keyboard_arrow_right" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pastoral"
+            android:icon="@drawable/ic_menu_pastoral"
+            android:title="@string/menu_pastoral" />
+        <item
+            android:id="@+id/nav_register_membros"
+            android:icon="@drawable/ic_menu_register_membros"
+            android:title="@string/menu_register_membros" />
+        <item
+            android:id="@+id/nav_list_membros"
+            android:icon="@drawable/ic_menu_membros"
+            android:title="@string/menu_list_membros" />
+        <item
+            android:id="@+id/nav_list_aniversariantes"
+            android:icon="@drawable/ic_cake"
+            android:title="@string/menu_list_birthdays" />
+        <item
+            android:id="@+id/nav_escala_datashow"
+            android:icon="@drawable/ic_videocam"
+            android:title="@string/menu_escala_datashow"/>
+        <item
+            android:id="@+id/nav_escala_musica"
+            android:icon="@drawable/ic_music"
+            android:title="@string/menu_escala_musica"/>
+        <item
+            android:id="@+id/nav_escala_portaria"
+            android:icon="@drawable/ic_portaria"
+            android:title="@string/menu_escala_portaria"/>
+        <item
+            android:id="@+id/nav_escala_som"
+            android:icon="@drawable/ic_surround_sound"
+            android:title="@string/menu_escala_som"/>
+        <item
+            android:id="@+id/nav_anuncio"
+            android:icon="@drawable/ic_settings_voice"
+            android:title="@string/menu_anuncio"/>
+    </group>
+
+<!--    <group android:checkableBehavior="single">-->
+<!--        <item-->
+<!--            android:id="@+id/nav_home"-->
+<!--            android:icon="@drawable/ic_menu_camera"-->
+<!--            android:title="@string/menu_home" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_gallery"-->
+<!--            android:icon="@drawable/ic_menu_gallery"-->
+<!--            android:title="@string/menu_gallery" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_slideshow"-->
+<!--            android:icon="@drawable/ic_menu_slideshow"-->
+<!--            android:title="@string/menu_slideshow" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_tools"-->
+<!--            android:icon="@drawable/ic_menu_manage"-->
+<!--            android:title="@string/menu_tools" />-->
+<!--    </group>-->
+
+<!--    <item android:title="Communicate">-->
+<!--        <menu>-->
+<!--            <item-->
+<!--                android:id="@+id/nav_share"-->
+<!--                android:icon="@drawable/ic_menu_share"-->
+<!--                android:title="@string/menu_share" />-->
+<!--            <item-->
+<!--                android:id="@+id/nav_send"-->
+<!--                android:icon="@drawable/ic_menu_send"-->
+<!--                android:title="@string/menu_send" />-->
+<!--        </menu>-->
+<!--    </item>-->
+
+</menu>

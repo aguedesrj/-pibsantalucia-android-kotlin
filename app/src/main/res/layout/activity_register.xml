@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/imageButtonRegisterBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewRegisterTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/screen_register"
+            android:textSize="@dimen/size_text_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonRegisterBack" />
+
+        <TextView
+            android:id="@+id/textViewRegisterTitleInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/screen_register_info"
+            android:textColor="@color/color_text_color_info"
+            android:textSize="@dimen/size_text_title_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewRegisterTitle"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRegisterTitle" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutRegisterEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="@+id/textViewRegisterTitleInfo"
+            app:layout_constraintStart_toStartOf="@+id/textViewRegisterTitleInfo"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRegisterTitleInfo">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextRegisterCpfEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_regular"
+                android:hint="@string/screen_login_hint_cpf_email"
+                android:inputType="textNoSuggestions"
+                android:lines="1"
+                android:textColor="@color/colorTextInputEditText"
+                android:textSize="@dimen/size_text_input_edit_text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonRegisterSend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="@string/hint_button_register"
+            android:textColor="@color/color_botton_text_color"
+            android:textSize="@dimen/size_text_button"
+            android:textAllCaps="false"
+            android:fontFamily="@font/nunito_bold"
+            android:background="@drawable/rounded_botton_border"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayoutRegisterEmail"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayoutRegisterEmail"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutRegisterEmail" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

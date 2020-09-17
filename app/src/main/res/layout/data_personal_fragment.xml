@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/circleImageViewCongregado"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_placeholder_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="2dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="@color/colorPrimary"
+            app:civ_shadow_radius="7"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutCongregadoName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circleImageViewCongregado">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextCongregadoName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_hint_name_congregado"
+                android:inputType="textNoSuggestions"
+                android:lines="1"
+                android:maxLength="80"
+                android:nextFocusDown="@+id/textInputLayoutCongregadoDateBirth"
+                android:importantForAutofill="noExcludeDescendants"
+                android:textColor="@color/colorTextInputEditText"
+                android:textSize="@dimen/size_text_input_edit_text"
+                android:fontFamily="@font/nunito_regular"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutReference1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayoutCongregadoName"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutCongregadoName"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayoutCongregadoName">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutCongregadoDateBirth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent=".48">
+
+                <mk.webfactory.dz.maskededittext.MaskedEditText
+                    android:id="@+id/editTextCongregadoDateBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/string_hint_date_birth_congregado"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:textColor="@color/colorTextInputEditText"
+                    android:textSize="@dimen/size_text_input_edit_text"
+                    android:fontFamily="@font/nunito_regular"
+                    app:maskededittext_enforceMaskLength="false"
+                    app:maskededittext_mask="##/##/####"
+                    app:maskededittext_maskCharacter="#"
+                    android:importantForAutofill="noExcludeDescendants"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radioGroupCongregadoSexo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/textInputLayoutCongregadoDateBirth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textInputLayoutCongregadoDateBirth"
+                app:layout_constraintTop_toTopOf="@+id/textInputLayoutCongregadoDateBirth">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radioButtonCongregadoF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feminino"
+                    android:textColor="@color/colorTextInputEditText"
+                    android:textSize="@dimen/size_text_input_edit_text"
+                    android:fontFamily="@font/nunito_regular"/>
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/radioButtonCongregadoM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino"
+                    android:textColor="@color/colorTextInputEditText"
+                    android:textSize="@dimen/size_text_input_edit_text"
+                    android:fontFamily="@font/nunito_regular"/>
+            </RadioGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutReference2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayoutReference1"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutReference1"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayoutReference1">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutCongregadoCpf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent=".48"
+                android:nextFocusDown="@+id/textInputEditTextCongregadoTypeBlood">
+
+                <mk.webfactory.dz.maskededittext.MaskedEditText
+                    android:id="@+id/editTextCongregadoCpf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/string_hint_cpf_congregado"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="14"
+                    android:textColor="@color/colorTextInputEditText"
+                    android:textSize="@dimen/size_text_input_edit_text"
+                    android:fontFamily="@font/nunito_regular"
+                    android:importantForAutofill="noExcludeDescendants"
+                    android:nextFocusDown="@+id/textInputEditTextCongregadoTypeBlood"
+                    app:maskededittext_enforceMaskLength="false"
+                    app:maskededittext_mask="###.###.###-##"
+                    app:maskededittext_maskCharacter="#" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutCongregadoTypeBlood"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textInputLayoutCongregadoCpf"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditTextCongregadoTypeBlood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/string_hint_type_blood_congregado"
+                    android:inputType="textNoSuggestions"
+                    android:lines="1"
+                    android:maxLength="5"
+                    android:textColor="@color/colorTextInputEditText"
+                    android:textSize="@dimen/size_text_input_edit_text"
+                    android:fontFamily="@font/nunito_regular"
+                    android:nextFocusDown="@+id/textInputLayoutCongregadoNaturalness"
+                    android:importantForAutofill="noExcludeDescendants"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutReference3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayoutReference2"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutReference2"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayoutReference2">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutCongregadoNaturalness"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintWidth_percent=".48">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditTextCongregadoNaturalness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/string_hint_naturalness_congregado"
+                    android:inputType="textNoSuggestions"
+                    android:lines="1"
+                    android:maxLength="45"
+                    android:textColor="@color/colorTextInputEditText"
+                    android:textSize="@dimen/size_text_input_edit_text"
+                    android:fontFamily="@font/nunito_regular"
+                    android:nextFocusDown="@+id/textInputEditTextCongregadoNationality"
+                    android:importantForAutofill="noExcludeDescendants"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutCongregadoNationality"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textInputLayoutCongregadoNaturalness"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditTextCongregadoNationality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/string_hint_nationality_congregado"
+                    android:inputType="textNoSuggestions"
+                    android:lines="1"
+                    android:maxLength="45"
+                    android:textColor="@color/colorTextInputEditText"
+                    android:textSize="@dimen/size_text_input_edit_text"
+                    android:fontFamily="@font/nunito_regular"
+                    android:nextFocusDown="@+id/textInputEditTextCongregadoProfession"
+                    android:importantForAutofill="noExcludeDescendants"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutCongregadoProfession"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayoutReference3"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutReference3"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayoutReference3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextCongregadoProfession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/string_hint_profession_congregado"
+                android:inputType="textNoSuggestions"
+                android:lines="1"
+                android:maxLength="80"
+                android:textColor="@color/colorTextInputEditText"
+                android:textSize="@dimen/size_text_input_edit_text"
+                android:fontFamily="@font/nunito_regular"
+                android:importantForAutofill="noExcludeDescendants"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

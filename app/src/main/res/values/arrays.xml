@@ -1,0 +1,14 @@
+<resources>
+    <string-array name="array_choose_option_membro">
+        <item>Alterar Dados do Membro</item>
+        <item>Óbito</item>
+        <item>Transferência</item>
+        <item>Desligamento</item>
+    </string-array>
+    <string-array name="array_choose_option_no_membro">
+        <item>Alterar Dados do Membro</item>
+        <item>Óbito</item>
+        <item>Transferência</item>
+        <item>Reconciliação</item>
+    </string-array>
+</resources>

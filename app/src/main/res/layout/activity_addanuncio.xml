@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.addanuncio.AddAnuncioActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutAddAnuncioDateLimit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <mk.webfactory.dz.maskededittext.MaskedEditText
+            android:id="@+id/textInputEditTextAddAnuncioDateLimit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_regular"
+            android:hint="@string/string_hint_date_limit"
+            android:importantForAutofill="noExcludeDescendants"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="10"
+            android:textColor="@color/colorTextInputEditText"
+            android:textSize="@dimen/size_text_input_edit_text"
+            app:maskededittext_enforceMaskLength="false"
+            app:maskededittext_mask="##/##/####"
+            app:maskededittext_maskCharacter="#" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayoutAddAnuncioDateLimit"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayoutAddAnuncioDateLimit"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutAddAnuncioDateLimit">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutAddAnuncio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="65535"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextAddAnuncio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/md_transparent"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="top|left"
+                android:hint="@string/string_hint_description"
+                android:importantForAutofill="noExcludeDescendants"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:maxLength="65535"
+                android:nextFocusDown="@+id/textInputLayoutAddAnuncioDateLimit"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="false"
+                android:textColor="@color/colorTextInputEditText"
+                android:textSize="@dimen/size_text_input_edit_text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_new"
+        android:backgroundTint="@color/colorPrimary"
+        android:icon="@drawable/ic_add_register"
+        android:title=""
+        app:iconTint="@android:color/white"
+        myapp:showAsAction="always" />
+</menu>

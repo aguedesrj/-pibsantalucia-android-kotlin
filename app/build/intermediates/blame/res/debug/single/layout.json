@@ -1,0 +1,166 @@
+[
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_detalhe_full_membro.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/activity_detalhe_full_membro.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/more_information_fragment.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/more_information_fragment.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/app_bar_main.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/app_bar_main.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/contacts_fragment.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/contacts_fragment.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/anuncio_fragment.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/anuncio_fragment.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_forgot_password.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/activity_forgot_password.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/escala_adapter.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/escala_adapter.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/custom_spinner_dropdown_item.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/custom_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_list_people.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/item_list_people.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_photo.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/activity_photo.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_anuncio.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/item_anuncio.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_aniversariantes.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/item_aniversariantes.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_transferencia.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/activity_transferencia.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_reconciliacao.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/activity_reconciliacao.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/adapter_contact_congregado.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/adapter_contact_congregado.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/pastoral_fragment.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/pastoral_fragment.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_home.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/address_fragment.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/address_fragment.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_addanuncio.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/activity_addanuncio.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_register.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/activity_register.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_desligamento.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/activity_desligamento.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_obito.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/activity_obito.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/list_pessoa_fragment.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/list_pessoa_fragment.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/escala_fragment.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/escala_fragment.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_pastoral.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/fragment_pastoral.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_register_pessoa.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/activity_register_pessoa.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/content_main.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/content_main.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_detalhe_membro.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/item_detalhe_membro.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_pesquisa_membro.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/activity_pesquisa_membro.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_aniversariantes.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/activity_aniversariantes.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/membros_fragment.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/membros_fragment.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/aniversarientes_fragment.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/aniversarientes_fragment.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/nav_header_main.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/nav_header_main.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/escala_child_adapter.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/escala_child_adapter.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_add_escala.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/activity_add_escala.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_detalhe_membro.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/activity_detalhe_membro.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_change_password.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/activity_change_password.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/data_personal_fragment.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/data_personal_fragment.xml"
+    },
+    {
+        "merged": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_splash.xml",
+        "source": "/Users/andrelessaguedes/Documents/Fontes/Android/pibsantalucia-kotlin/app/src/main/res/layout/activity_splash.xml"
+    }
+]

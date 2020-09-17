@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.detalhemembro.DetalheMembroActivity">
+
+    <ImageView
+        android:id="@+id/imageViewDetalheMembroBg"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_placeholder_user" />
+
+    <View
+        android:id="@+id/viewDetalheMembroBg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/background_dark"
+        android:alpha="0.7"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewDetalheMembroBg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewDetalheMembroBg" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circularImageViewDetalheMembro"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_placeholder_user"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewDetalheMembroBg"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewDetalheMembroBg"
+        app:layout_constraintStart_toStartOf="@+id/imageViewDetalheMembroBg"
+        app:layout_constraintTop_toTopOf="@+id/imageViewDetalheMembroBg"/>
+
+    <TextView
+        android:id="@+id/textViewDetalheMembroNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:textSize="@dimen/size_text_input_edit_text"
+        android:fontFamily="@font/nunito_bold"
+        android:text="TextView"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDetalheMembroBg" />
+
+    <TextView
+        android:id="@+id/textViewDetalheMembroAniversario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="@dimen/size_text_14"
+        android:fontFamily="@font/nunito_regularitalic"
+        android:text="TextView"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDetalheMembroNome"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetalheMembroNome" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:textSize="@dimen/size_text_16"
+        android:text="Endereço"
+        app:layout_constraintStart_toStartOf="@+id/textViewDetalheMembroNome"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetalheMembroAniversario" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:textSize="@dimen/size_text_16"
+        android:text="Telefone"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetalheMembroEndereco" />
+
+    <TextView
+        android:id="@+id/textViewDetalheMembroEndereco"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/nunito_regular"
+        android:textSize="@dimen/size_text_16"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDetalheMembroNome"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDetalheMembroAniversario"
+        app:layout_constraintEnd_toStartOf="@+id/textViewDetalheMembroAniversario"
+        app:layout_constraintTop_toTopOf="@+id/textViewDetalheMembroAniversario"
+        app:srcCompat="@drawable/ic_cake" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTelefones"
+        android:layout_width="0dp"
+        android:layout_height="312dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDetalheMembroEndereco"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
